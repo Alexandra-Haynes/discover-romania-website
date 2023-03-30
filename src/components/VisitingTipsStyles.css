@@ -1,0 +1,100 @@
+
+ .tips-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+ }
+.tips-body h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 3.5rem;
+    /* padding-bottom: 3rem; */
+    color: white;
+    text-shadow: var(--secondary) 1px 0 10px;
+    transform: translate(-50%, -50%); 
+}
+.cards-container{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    overflow: hidden;  
+}
+
+.card {
+    background-color: rgb(230, 230, 228);
+    height: calc(100% /3);
+    width: calc(100% /3);
+    display: inline-block;
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: -1px 1px 50px -25px rgba(0, 0, 0, 2);
+    padding: 2rem;
+    opacity: 85%;
+   z-index: 2;
+   
+}
+
+.card:hover{
+  opacity: 100%;
+  transition: 0.3s ease-in-out;
+}
+.card i {
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.card h3{
+    font-size: 1.2rem;
+    font-weight: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card p {
+    color: var(--secondary);
+    margin: 1rem;
+    white-space: normal;
+    
+}
+
+.slider-icons i{
+    position: fixed;
+    font-size: 3rem;
+    background-color: rgb(42, 19, 19);
+    cursor: pointer;
+    color: var(--highlights);
+   padding: 0.5rem;
+   border-radius: 20%;
+   z-index: 1;
+   
+}
+.slider-icons i:hover{
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+.slider-icons i:first-child {
+    left:5px;
+    top:65%;
+    
+}
+.slider-icons i:last-child {
+    right:5px;
+    top:65%;
+    
+  }
+
+  @media screen and (max-width: 1024px) {
+    .card {
+      width: calc(100%/2)
+    }
+  }
+
+
+  @media screen and (max-width: 550px) {
+    .card {
+      width:100%;
+    }
+  }

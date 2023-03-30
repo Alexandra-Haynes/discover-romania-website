@@ -1,0 +1,104 @@
+.video-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+
+.video-container video {
+    position: absolute;
+    z-index: -1;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    /* video will scale with the aspect ratio */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* video perfectly centered */
+
+}
+
+.video-credit {
+    padding-bottom: 1.8rem;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+
+    color: white;
+    font-size: 2rem;
+    right: 3rem;
+    text-align: flex-end;
+}
+
+.video-credit a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+}
+
+.video-credit a:hover {
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    line-height: 6px;
+
+}
+
+.video-bar {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    color: var(--secondary);
+    opacity: 1;
+    font-size: 1rem;
+    bottom: 0;
+    padding: 0.8rem;
+    opacity: .8;
+    white-space: nowrap;
+}
+
+.video-bar h3 {
+   
+    animation: adventure-awaits 15s linear infinite;
+} 
+
+
+@keyframes adventure-awaits {
+    from {
+        transform: translateX(70%);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .video-bar h3 {
+        animation: adventure-awaits  linear infinite;
+    }
+
+   
+}
+
+
+@media screen and (max-width: 950px) {
+    .video-container {
+           height: 500px;
+           width: 100%;
+        } 
+                .video-credit {
+                    font-size: 1.5rem
+                }
+    }

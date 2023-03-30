@@ -1,0 +1,91 @@
+.comment-section-container {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--secondary);
+    width: 100%;
+    padding: 3rem 0;
+    min-width: 400px;
+
+
+}
+
+.comment-title {
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.input-group label {
+    color: white;
+    font-weight: lighter;
+    font-size: 1.2em;
+    margin-bottom: 7px;
+}
+
+.input-group input {
+    font-size: 1.4em;
+    padding: .4em;
+    background-color: hsla(53, 87%, 82%, 0.8);
+    border: 1px solid hsl(201, 100%, 6%);
+    outline: none;
+    border-radius: 5px;
+    color: var(--secondary);
+    font-weight: lighter;
+    width: 60%;
+}
+.input-group textarea {
+    width: 60%;
+    color: var(--secondary);
+    font-size: 1.4em;
+    padding: .4em;
+    padding: .1em .25em;
+    background-color: hsla(53, 87%, 82%, 0.8);
+    outline: none;
+    border-radius: 5px;
+}
+.input-group textarea:focus {
+    border: 2px solid hsl(49, 100%, 51%);
+    background-color: rgb(251, 245, 200);
+}
+
+.input-group input:focus {
+    border: 2px solid hsl(49, 100%, 51%);
+    background-color: rgb(251, 245, 200);
+}
+
+
+
+.comment-button {
+    width: 40%;
+    padding: 10px 30px;
+
+    border-radius: 5px;
+    background-color: hsla(112, 53%, 44%, 0.8);
+   
+    outline: none;
+    font-size: 1.5em;
+    color: white;
+    font-weight: lighter;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.comment-button:hover {
+    
+    background-color: hsla(114, 56%, 59%, 0.8);
+    
+}
+
+.comment-button:focus {
+    background-color: hsla(52, 65%, 81%, 0.8)
+}
